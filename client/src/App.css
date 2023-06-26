@@ -4,14 +4,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-:root{
+:root {
   --color-yellow: #f9c74f;
   --color-purple: #9d4edd;
 }
 
-*>*{
+* {
   font-family: 'Poppins', sans-serif;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
@@ -20,10 +20,49 @@
   padding: 4em 0;
 }
 
-.bg-yellow{
+.bg-yellow {
   background-color: var(--color-yellow);
 }
 
-.bg-yellow{
+.bg-purple {
   background-color: var(--color-purple);
 }
+
+.chart {
+  position: relative;
+}
+
+.chart.title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.labels .flex {
+  gap: 2rem;
+}
+
+.labels .w-2 {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.labels .text-md {
+  font-size: 1rem;
+}
+
+.labels .font-bold {
+  font-weight: bold;
+}
+
+
